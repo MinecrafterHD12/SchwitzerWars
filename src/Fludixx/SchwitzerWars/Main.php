@@ -711,6 +711,8 @@ class Asker extends Task
 
 		if($counter == 1) {
 			$player->sendMessage($this->plugin->prefix."Du bist der letzte Überlebende!");
+			$player->sendTip("§7+§6 20");
+			//COINSSYSTEM-COMMING\\
 			$lobby = $this->plugin->getServer()->getDefaultLevel();
 			$pos = new Position($lobby->getSafeSpawn()->getX(), $lobby->getSafeSpawn()->getY(),
 				$lobby->getSafeSpawn()->getZ(), $lobby);
